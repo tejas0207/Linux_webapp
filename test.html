@@ -141,7 +141,7 @@
 </style>
 
 <script>
-  // Functions for each action-command.
+ 
 
 
 
@@ -151,13 +151,8 @@
     //Check if the enter key is pressed
     if (e.keyCode == 13) {
 
-      //Clear the area where info will be printed
+     
       document.getElementById('injected').innerHTML = "";
-
-      //Get user input
-
-
-
       var i = document.getElementById("txtBox").value
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "http://192.168.1.107/cgi-bin/docker.py?x=" + i, false)
